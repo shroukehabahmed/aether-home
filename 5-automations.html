@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary": "#ffa84f",
+                    "error-container": "#9f0519",
+                    "tertiary-fixed": "#ff9817",
+                    "on-primary-fixed": "#000000",
+                    "on-tertiary": "#562f00",
+                    "secondary-container": "#006e28",
+                    "inverse-on-surface": "#555557",
+                    "on-background": "#fefbfe",
+                    "inverse-surface": "#fcf8fb",
+                    "inverse-primary": "#005bc2",
+                    "primary-fixed-dim": "#5191ff",
+                    "on-surface": "#fefbfe",
+                    "tertiary-fixed-dim": "#ee8b00",
+                    "on-primary-container": "#00214f",
+                    "primary-fixed": "#6c9fff",
+                    "primary": "#85adff",
+                    "on-tertiary-fixed": "#281300",
+                    "primary-container": "#6c9fff",
+                    "error-dim": "#d7383b",
+                    "on-secondary-fixed-variant": "#006826",
+                    "primary-dim": "#0070eb",
+                    "background": "#0e0e10",
+                    "on-tertiary-container": "#482600",
+                    "on-secondary-fixed": "#004818",
+                    "secondary-fixed": "#6ffb85",
+                    "secondary-fixed-dim": "#60ec79",
+                    "surface-dim": "#0e0e10",
+                    "on-secondary": "#005d21",
+                    "on-error": "#490006",
+                    "surface-container-low": "#131315",
+                    "surface-container-lowest": "#000000",
+                    "on-error-container": "#ffa8a3",
+                    "tertiary-container": "#fe9400",
+                    "surface-bright": "#2c2c2f",
+                    "on-secondary-container": "#e5ffe0",
+                    "surface-container": "#19191c",
+                    "secondary-dim": "#60ec79",
+                    "surface-container-highest": "#252528",
+                    "tertiary-dim": "#ea8900",
+                    "surface-variant": "#252528",
+                    "surface-tint": "#85adff",
+                    "on-primary": "#002c65",
+                    "outline": "#767577",
+                    "surface": "#0e0e10",
+                    "on-primary-fixed-variant": "#002a61",
+                    "on-tertiary-fixed-variant": "#573000",
+                    "error": "#ff716c",
+                    "outline-variant": "#48474a",
+                    "surface-container-high": "#1f1f22",
+                    "secondary": "#6ffb85",
+                    "on-surface-variant": "#acaaad"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary selection:text-on-primary-container">
+<!-- Side Navigation Bar -->
+<aside class="fixed left-0 top-0 bottom-0 w-[280px] z-50 bg-[#131315] bg-gradient-to-r from-[#131315] to-[#1f1f22] flex flex-col h-full py-8">
+<div class="px-8 mb-12">
+<h1 class="text-[#fefbfe] font-black uppercase text-xs tracking-widest font-headline">Digital Curator</h1>
+<p class="text-on-surface-variant text-[10px] uppercase tracking-[0.2em] mt-1 font-bold">Active: Morning Scene</p>
+</div>
+<nav class="flex-1 flex flex-col space-y-1">
+<a class="text-[#acaaad] px-6 py-3 my-1 mx-4 hover:text-[#fefbfe] hover:bg-[#1f1f22] rounded-full transition-all duration-300 flex items-center gap-4 font-manrope text-sm font-medium tracking-wide scale-98" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+                Dashboard
+            </a>
+<a class="text-[#acaaad] px-6 py-3 my-1 mx-4 hover:text-[#fefbfe] hover:bg-[#1f1f22] rounded-full transition-all duration-300 flex items-center gap-4 font-manrope text-sm font-medium tracking-wide scale-98" href="#">
+<span class="material-symbols-outlined">devices</span>
+                Devices
+            </a>
+<a class="text-[#fefbfe] bg-gradient-to-br from-[#85adff] to-[#6c9fff] rounded-full px-6 py-3 my-1 mx-4 flex items-center gap-4 font-manrope text-sm font-medium tracking-wide shadow-lg" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+                Automations
+            </a>
+<a class="text-[#acaaad] px-6 py-3 my-1 mx-4 hover:text-[#fefbfe] hover:bg-[#1f1f22] rounded-full transition-all duration-300 flex items-center gap-4 font-manrope text-sm font-medium tracking-wide scale-98" href="#">
+<span class="material-symbols-outlined">layers</span>
+                Scenes
+            </a>
+<a class="text-[#acaaad] px-6 py-3 my-1 mx-4 hover:text-[#fefbfe] hover:bg-[#1f1f22] rounded-full transition-all duration-300 flex items-center gap-4 font-manrope text-sm font-medium tracking-wide scale-98" href="#">
+<span class="material-symbols-outlined">history</span>
+                Activity
+            </a>
+<a class="text-[#acaaad] px-6 py-3 my-1 mx-4 hover:text-[#fefbfe] hover:bg-[#1f1f22] rounded-full transition-all duration-300 flex items-center gap-4 font-manrope text-sm font-medium tracking-wide scale-98" href="#">
+<span class="material-symbols-outlined">person</span>
+                Settings
+            </a>
+</nav>
+<div class="px-4 mt-auto">
+<button class="w-full bg-surface-container-highest text-primary font-bold py-4 rounded-full flex items-center justify-center gap-2 hover:bg-surface-bright transition-all duration-300 scale-95 active:scale-90">
+<span class="material-symbols-outlined">add_circle</span>
+                Add Device
+            </button>
+</div>
+</aside>
+<!-- Top App Bar -->
+<header class="fixed top-0 right-0 z-40 bg-[#0e0e10]/80 backdrop-blur-xl flex justify-between items-center w-[calc(100%-280px)] ml-auto px-10 h-20 shadow-[0_40px_60px_rgba(254,251,254,0.04)]">
+<div class="flex items-center gap-4">
+<h2 class="text-2xl font-bold tracking-tighter text-[#fefbfe] font-manrope">Automations</h2>
+</div>
+<div class="flex items-center gap-6">
+<div class="relative group">
+<input class="bg-surface-container-low border-none rounded-full px-6 py-2 text-sm w-64 focus:ring-1 focus:ring-primary focus:bg-surface-container transition-all text-on-surface" placeholder="Search routines..." type="text"/>
+<span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 text-on-surface-variant text-sm">search</span>
+</div>
+<div class="flex items-center gap-4 text-on-surface-variant">
+<button class="hover:text-[#fefbfe] transition-colors duration-200 scale-95 active:scale-90">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<button class="hover:text-[#fefbfe] transition-colors duration-200 scale-95 active:scale-90">
+<span class="material-symbols-outlined">settings</span>
+</button>
+<div class="w-10 h-10 rounded-full overflow-hidden border border-outline-variant/15">
+<img alt="User profile" class="w-full h-full object-cover" data-alt="Close-up portrait of a professional man with a neutral expression in high-end studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2bLpZYJz4UwKfUYDXu1UUDauh0o1sT-PXUJCJ3nWp7_BONUgy6vqvckl53u6ZbcU-J5sbncjpXqq6HWfviVVBxZLzMfHahn3Tv-6b_2r1Ws30ec31KSWbJ0pVFJtux0AX6yYULFizU6fJQcYN-_ia68zKiq7nX_fOVT_p-IbNaCFfUd5m1md8AgXhgucOOCBt5X1892OC_9SR6uq5FvvjU8yR0QZO4exlxSH5Y2nGVTlpVfj_qgILek2eMbcTewJVFSCa23i3Tc4_"/>
+</div>
+</div>
+</div>
+</header>
+<!-- Main Canvas -->
+<main class="ml-[280px] pt-32 px-10 pb-20 min-h-screen">
+<!-- Hero Editorial Section -->
+<section class="mb-12">
+<div class="flex items-end justify-between">
+<div>
+<h3 class="text-5xl font-headline font-extrabold tracking-tight mb-2">Automated Living</h3>
+<p class="text-on-surface-variant text-lg max-w-xl">Intelligent routines designed to adapt to your lifestyle. 4 routines active today.</p>
+</div>
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary-fixed px-8 py-4 rounded-xl font-bold text-base flex items-center gap-3 shadow-lg hover:shadow-primary/20 transition-all active:scale-95">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">add</span>
+                    Create New Rule
+                </button>
+</div>
+</section>
+<!-- Bento Grid Logic Builder Tiles -->
+<div class="grid grid-cols-12 gap-6">
+<!-- Featured Automation: Sunset Routine -->
+<div class="col-span-8 bg-surface-container-low rounded-xl p-8 relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-8">
+<div class="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center">
+<div class="w-3 h-3 bg-secondary rounded-full shadow-[0_0_12px_rgba(111,251,133,0.6)]"></div>
+</div>
+</div>
+<div class="relative z-10">
+<span class="text-xs font-bold uppercase tracking-widest text-primary mb-4 block">Most Active Routine</span>
+<h4 class="text-3xl font-headline font-bold mb-8">Golden Hour Ambiance</h4>
+<div class="flex items-center gap-10">
+<div class="flex-1">
+<p class="text-on-surface-variant text-xs uppercase font-bold tracking-wider mb-2">When</p>
+<div class="flex items-center gap-4 bg-surface-container-lowest/40 backdrop-blur-md p-5 rounded-lg">
+<span class="material-symbols-outlined text-tertiary text-3xl">wb_twilight</span>
+<div>
+<p class="font-bold text-lg">Sunset in Austin</p>
+<p class="text-on-surface-variant text-sm">Dynamic schedule</p>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-center pt-6">
+<span class="material-symbols-outlined text-outline-variant/30 text-4xl">arrow_forward_ios</span>
+</div>
+<div class="flex-1">
+<p class="text-on-surface-variant text-xs uppercase font-bold tracking-wider mb-2">Then</p>
+<div class="flex items-center gap-4 bg-surface-container-lowest/40 backdrop-blur-md p-5 rounded-lg">
+<span class="material-symbols-outlined text-primary text-3xl">light_group</span>
+<div>
+<p class="font-bold text-lg">Living Room Scenes</p>
+<p class="text-on-surface-variant text-sm">Transition to Warm Glow</p>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-10 flex items-center justify-between border-t border-outline-variant/10 pt-8">
+<div class="flex gap-4">
+<button class="bg-surface-container-high px-5 py-2 rounded-full text-sm font-semibold hover:bg-surface-bright transition-all">Edit Routine</button>
+<button class="text-error font-semibold text-sm px-4">Delete</button>
+</div>
+<div class="flex items-center gap-3">
+<span class="text-on-surface-variant text-sm font-medium">Routine Enabled</span>
+<div class="w-14 h-8 bg-secondary-container rounded-full relative cursor-pointer">
+<div class="absolute right-1 top-1 w-6 h-6 bg-on-background rounded-full shadow-md"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Decorative Abstract Background -->
+<div class="absolute -bottom-24 -right-24 w-96 h-96 bg-primary/5 rounded-full blur-[100px]"></div>
+</div>
+<!-- Side Card: Quick Statistics -->
+<div class="col-span-4 bg-surface-container-high rounded-xl p-8 flex flex-col">
+<h5 class="text-xl font-headline font-bold mb-6">Weekly Efficiency</h5>
+<div class="flex-1 flex flex-col justify-center space-y-8">
+<div class="flex items-center justify-between">
+<div>
+<p class="text-4xl font-headline font-extrabold text-secondary">82%</p>
+<p class="text-on-surface-variant text-xs font-bold uppercase tracking-widest">Energy Saved</p>
+</div>
+<span class="material-symbols-outlined text-secondary-container text-4xl">eco</span>
+</div>
+<div class="h-2 w-full bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full w-[82%] bg-gradient-to-r from-secondary to-secondary-container"></div>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed">Your "Night Mode" and "Away" automations reduced HVAC usage by <span class="text-on-surface font-bold">12 hours</span> this week.</p>
+</div>
+</div>
+<!-- Secondary Automation Grid -->
+<div class="col-span-12 mt-4">
+<div class="flex items-center justify-between mb-8">
+<h5 class="text-2xl font-headline font-bold">Library</h5>
+<div class="flex gap-2">
+<button class="p-2 bg-surface-container-high rounded-lg text-primary"><span class="material-symbols-outlined">grid_view</span></button>
+<button class="p-2 bg-surface-container-low rounded-lg text-on-surface-variant"><span class="material-symbols-outlined">format_list_bulleted</span></button>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-6">
+<!-- Rule 2: Morning Alarm -->
+<div class="bg-surface-container-low rounded-xl p-6 hover:bg-surface-container-high transition-all duration-300 group cursor-pointer">
+<div class="flex justify-between items-start mb-6">
+<div class="p-3 bg-tertiary/10 rounded-lg">
+<span class="material-symbols-outlined text-tertiary">alarm</span>
+</div>
+<div class="w-10 h-6 bg-surface-container-highest rounded-full relative">
+<div class="absolute left-1 top-1 w-4 h-4 bg-on-surface-variant rounded-full"></div>
+</div>
+</div>
+<h6 class="text-lg font-bold mb-4">Rise &amp; Shine</h6>
+<div class="space-y-3">
+<div class="flex items-center gap-2 text-xs text-on-surface-variant font-bold uppercase tracking-wider">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> When
+                            </div>
+<p class="text-sm">Time is 07:00 AM</p>
+<div class="flex items-center gap-2 text-xs text-on-surface-variant font-bold uppercase tracking-wider">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Then
+                            </div>
+<p class="text-sm">Blinds Open (50%) &amp; Coffee Start</p>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/10 flex justify-end gap-3 opacity-0 group-hover:opacity-100 transition-opacity">
+<button class="text-on-surface-variant hover:text-on-surface"><span class="material-symbols-outlined text-xl">edit</span></button>
+<button class="text-on-surface-variant hover:text-error"><span class="material-symbols-outlined text-xl">delete</span></button>
+</div>
+</div>
+<!-- Rule 3: Smart Away -->
+<div class="bg-surface-container-low rounded-xl p-6 hover:bg-surface-container-high transition-all duration-300 group cursor-pointer">
+<div class="flex justify-between items-start mb-6">
+<div class="p-3 bg-primary/10 rounded-lg">
+<span class="material-symbols-outlined text-primary">distance</span>
+</div>
+<div class="w-10 h-6 bg-secondary-container rounded-full relative">
+<div class="absolute right-1 top-1 w-4 h-4 bg-on-background rounded-full"></div>
+</div>
+</div>
+<h6 class="text-lg font-bold mb-4">Empty House Mode</h6>
+<div class="space-y-3">
+<div class="flex items-center gap-2 text-xs text-on-surface-variant font-bold uppercase tracking-wider">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> When
+                            </div>
+<p class="text-sm">Last person leaves Geo-fence</p>
+<div class="flex items-center gap-2 text-xs text-on-surface-variant font-bold uppercase tracking-wider">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Then
+                            </div>
+<p class="text-sm">Lock Doors &amp; Enable Security</p>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/10 flex justify-end gap-3 opacity-0 group-hover:opacity-100 transition-opacity">
+<button class="text-on-surface-variant hover:text-on-surface"><span class="material-symbols-outlined text-xl">edit</span></button>
+<button class="text-on-surface-variant hover:text-error"><span class="material-symbols-outlined text-xl">delete</span></button>
+</div>
+</div>
+<!-- Rule 4: Climate Watch -->
+<div class="bg-surface-container-low rounded-xl p-6 hover:bg-surface-container-high transition-all duration-300 group cursor-pointer">
+<div class="flex justify-between items-start mb-6">
+<div class="p-3 bg-secondary/10 rounded-lg">
+<span class="material-symbols-outlined text-secondary">thermostat</span>
+</div>
+<div class="w-10 h-6 bg-secondary-container rounded-full relative">
+<div class="absolute right-1 top-1 w-4 h-4 bg-on-background rounded-full"></div>
+</div>
+</div>
+<h6 class="text-lg font-bold mb-4">Temp Control</h6>
+<div class="space-y-3">
+<div class="flex items-center gap-2 text-xs text-on-surface-variant font-bold uppercase tracking-wider">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> When
+                            </div>
+<p class="text-sm">Room Temp &gt; 76°F</p>
+<div class="flex items-center gap-2 text-xs text-on-surface-variant font-bold uppercase tracking-wider">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Then
+                            </div>
+<p class="text-sm">AC On (72°F) &amp; Close East Blinds</p>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/10 flex justify-end gap-3 opacity-0 group-hover:opacity-100 transition-opacity">
+<button class="text-on-surface-variant hover:text-on-surface"><span class="material-symbols-outlined text-xl">edit</span></button>
+<button class="text-on-surface-variant hover:text-error"><span class="material-symbols-outlined text-xl">delete</span></button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Suggested Automations (Horizontal Scroll) -->
+<section class="mt-16">
+<h5 class="text-xl font-headline font-bold mb-8">Recommended for you</h5>
+<div class="flex gap-6 overflow-x-auto hide-scrollbar pb-6">
+<div class="min-w-[320px] bg-gradient-to-br from-surface-container-high to-surface-container-low rounded-xl p-6 border border-outline-variant/5">
+<span class="bg-primary/20 text-primary text-[10px] font-bold uppercase px-2 py-1 rounded mb-4 inline-block">Security</span>
+<h6 class="font-bold mb-2">Vacation Pattern</h6>
+<p class="text-sm text-on-surface-variant mb-6">Mimic occupied presence by randomly cycling lights when away.</p>
+<button class="text-primary text-sm font-bold flex items-center gap-2 hover:translate-x-1 transition-transform">
+                        Add to Library <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+<div class="min-w-[320px] bg-gradient-to-br from-surface-container-high to-surface-container-low rounded-xl p-6 border border-outline-variant/5">
+<span class="bg-tertiary/20 text-tertiary text-[10px] font-bold uppercase px-2 py-1 rounded mb-4 inline-block">Wellness</span>
+<h6 class="font-bold mb-2">Deep Sleep Transition</h6>
+<p class="text-sm text-on-surface-variant mb-6">Slowly dim bedroom lights to 0% over 30 minutes at bedtime.</p>
+<button class="text-primary text-sm font-bold flex items-center gap-2 hover:translate-x-1 transition-transform">
+                        Add to Library <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+<div class="min-w-[320px] bg-gradient-to-br from-surface-container-high to-surface-container-low rounded-xl p-6 border border-outline-variant/5">
+<span class="bg-secondary/20 text-secondary text-[10px] font-bold uppercase px-2 py-1 rounded mb-4 inline-block">Energy</span>
+<h6 class="font-bold mb-2">Solar Smart Wash</h6>
+<p class="text-sm text-on-surface-variant mb-6">Start dishwasher only when solar production is at peak.</p>
+<button class="text-primary text-sm font-bold flex items-center gap-2 hover:translate-x-1 transition-transform">
+                        Add to Library <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+</main>
+</body></html>
