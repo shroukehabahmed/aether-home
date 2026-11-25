@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<title>Aether Home | Notifications</title>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Inter:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #0e0e10;
+            color: #fefbfe;
+            font-family: 'Inter', sans-serif;
+        }
+        .font-headline { font-family: 'Manrope', sans-serif; }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary": "#ffa84f",
+                    "error-container": "#9f0519",
+                    "tertiary-fixed": "#ff9817",
+                    "on-primary-fixed": "#000000",
+                    "on-tertiary": "#562f00",
+                    "secondary-container": "#006e28",
+                    "inverse-on-surface": "#555557",
+                    "on-background": "#fefbfe",
+                    "inverse-surface": "#fcf8fb",
+                    "inverse-primary": "#005bc2",
+                    "primary-fixed-dim": "#5191ff",
+                    "on-surface": "#fefbfe",
+                    "tertiary-fixed-dim": "#ee8b00",
+                    "on-primary-container": "#00214f",
+                    "primary-fixed": "#6c9fff",
+                    "primary": "#85adff",
+                    "on-tertiary-fixed": "#281300",
+                    "primary-container": "#6c9fff",
+                    "error-dim": "#d7383b",
+                    "on-secondary-fixed-variant": "#006826",
+                    "primary-dim": "#0070eb",
+                    "background": "#0e0e10",
+                    "on-tertiary-container": "#482600",
+                    "on-secondary-fixed": "#004818",
+                    "secondary-fixed": "#6ffb85",
+                    "secondary-fixed-dim": "#60ec79",
+                    "surface-dim": "#0e0e10",
+                    "on-secondary": "#005d21",
+                    "on-error": "#490006",
+                    "surface-container-low": "#131315",
+                    "surface-container-lowest": "#000000",
+                    "on-error-container": "#ffa8a3",
+                    "tertiary-container": "#fe9400",
+                    "surface-bright": "#2c2c2f",
+                    "on-secondary-container": "#e5ffe0",
+                    "surface-container": "#19191c",
+                    "secondary-dim": "#60ec79",
+                    "surface-container-highest": "#252528",
+                    "tertiary-dim": "#ea8900",
+                    "surface-variant": "#252528",
+                    "surface-tint": "#85adff",
+                    "on-primary": "#002c65",
+                    "outline": "#767577",
+                    "surface": "#0e0e10",
+                    "on-primary-fixed-variant": "#002a61",
+                    "on-tertiary-fixed-variant": "#573000",
+                    "error": "#ff716c",
+                    "outline-variant": "#48474a",
+                    "surface-container-high": "#1f1f22",
+                    "secondary": "#6ffb85",
+                    "on-surface-variant": "#acaaad"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+</head>
+<body class="bg-background">
+<!-- SideNavBar Shell -->
+<aside class="fixed left-0 top-0 bottom-0 w-[280px] z-50 bg-[#131315] bg-gradient-to-r from-[#131315] to-[#1f1f22] flex flex-col h-full py-8">
+<div class="px-8 mb-10">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary-container" style="font-variation-settings: 'FILL' 1;">fluid</span>
+</div>
+<div>
+<h1 class="text-[#fefbfe] font-black uppercase text-xs tracking-widest">Digital Curator</h1>
+<p class="text-on-surface-variant text-[10px] uppercase tracking-tighter">Active: Morning Scene</p>
+</div>
+</div>
+</div>
+<nav class="flex-1 space-y-1">
+<div onclick="window.location.href='index.html'" class="text-[#acaaad] px-6 py-3 my-1 mx-4 hover:text-[#fefbfe] hover:bg-[#1f1f22] rounded-full transition-all duration-300 flex items-center gap-4 cursor-pointer">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="font-manrope text-sm font-medium tracking-wide">Dashboard</span>
+</div>
+<div onclick="window.location.href='devices.html'" class="text-[#acaaad] px-6 py-3 my-1 mx-4 hover:text-[#fefbfe] hover:bg-[#1f1f22] rounded-full transition-all duration-300 flex items-center gap-4 cursor-pointer">
+<span class="material-symbols-outlined">devices</span>
+<span class="font-manrope text-sm font-medium tracking-wide">Devices</span>
+</div>
+<div onclick="window.location.href='automations.html'" class="text-[#acaaad] px-6 py-3 my-1 mx-4 hover:text-[#fefbfe] hover:bg-[#1f1f22] rounded-full transition-all duration-300 flex items-center gap-4 cursor-pointer">
+<span class="material-symbols-outlined">auto_awesome</span>
+<span class="font-manrope text-sm font-medium tracking-wide">Automations</span>
+</div>
+<div onclick="window.location.href='scenes.html'" class="text-[#acaaad] px-6 py-3 my-1 mx-4 hover:text-[#fefbfe] hover:bg-[#1f1f22] rounded-full transition-all duration-300 flex items-center gap-4 cursor-pointer">
+<span class="material-symbols-outlined">layers</span>
+<span class="font-manrope text-sm font-medium tracking-wide">Scenes</span>
+</div>
+<div onclick="window.location.href='activity.html'" class="text-[#acaaad] px-6 py-3 my-1 mx-4 hover:text-[#fefbfe] hover:bg-[#1f1f22] rounded-full transition-all duration-300 flex items-center gap-4 cursor-pointer">
+<span class="material-symbols-outlined">history</span>
+<span class="font-manrope text-sm font-medium tracking-wide">Activity</span>
+</div>
+<div onclick="window.location.href='settings.html'" class="text-[#acaaad] px-6 py-3 my-1 mx-4 hover:text-[#fefbfe] hover:bg-[#1f1f22] rounded-full transition-all duration-300 flex items-center gap-4 cursor-pointer">
+<span class="material-symbols-outlined">person</span>
+<span class="font-manrope text-sm font-medium tracking-wide">Settings</span>
+</div>
+</nav>
+<div class="px-8 mt-auto">
+<button class="w-full py-4 bg-surface-container-highest text-on-surface rounded-full font-headline font-bold text-sm hover:bg-surface-bright transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">add</span>
+                Add Device
+            </button>
+</div>
+</aside>
+<header class="fixed top-0 right-0 z-40 bg-[#0e0e10]/80 backdrop-blur-xl flex justify-between items-center w-[calc(100%-280px)] ml-auto px-10 h-20">
+<div class="flex items-center gap-4">
+<h2 class="text-2xl font-headline font-bold tracking-tighter text-[#fefbfe]">Aether Home</h2>
+</div>
+<div class="flex items-center gap-6">
+<div class="hidden md:flex items-center bg-surface-container-low px-4 py-2 rounded-full border-none">
+<span class="material-symbols-outlined text-on-surface-variant text-sm">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-sm text-on-surface ml-2 w-48" placeholder="Search notifications..." type="text"/>
+</div>
+<div class="flex gap-4">
+<button class="text-[#85adff] font-bold transition-colors duration-200 scale-95 active:scale-90 transition-transform">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<button class="text-[#acaaad] hover:text-[#fefbfe] transition-colors duration-200 scale-95 active:scale-90 transition-transform">
+<span class="material-symbols-outlined">settings</span>
+</button>
+</div>
+<div class="w-10 h-10 rounded-full overflow-hidden bg-surface-container-high flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface-variant">person</span>
+</div>
+</div>
+</header>
+<main class="ml-[280px] pt-32 px-10 pb-20">
+
+<div class="flex justify-between items-end mb-10">
+<div>
+<p class="text-primary font-headline text-xs uppercase tracking-[0.2em] mb-2">Inbox</p>
+<h1 class="font-headline text-5xl font-bold tracking-tight text-on-surface mb-3">Notifications</h1>
+<p class="text-on-surface-variant text-sm">Alerts, automation runs and device updates from your home.</p>
+</div>
+<button id="mark-all-read" class="px-6 py-3 bg-surface-container-high rounded-full font-headline font-bold text-sm text-on-surface hover:bg-surface-bright transition-all">Mark all as read</button>
+</div>
+<div class="bg-surface-container-low rounded-xl p-8">
+<p class="text-on-surface-variant text-xs font-bold uppercase tracking-widest mb-2">Today</p>
+<div class="flex items-start gap-4 py-5 border-b border-outline-variant/10">
+<div class="w-10 h-10 rounded-full bg-tertiary/15 flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-tertiary text-xl">warning</span></div>
+<div class="flex-1"><p class="text-on-surface text-sm font-bold">Unusual activity window</p><p class="text-on-surface-variant text-sm">Living room motion detected while Away Mode was on. Porch Cam recording saved.</p></div>
+<span class="text-on-surface-variant text-xs whitespace-nowrap">10:41 PM</span>
+<span data-unread class="w-2 h-2 rounded-full bg-primary mt-2"></span>
+</div>
+<div class="flex items-start gap-4 py-5 border-b border-outline-variant/10">
+<div class="w-10 h-10 rounded-full bg-primary/15 flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-primary text-xl">auto_awesome</span></div>
+<div class="flex-1"><p class="text-on-surface text-sm font-bold">Automation ran: Good Night</p><p class="text-on-surface-variant text-sm">Lights off, thermostat 68&deg;, doors locked, system armed.</p></div>
+<span class="text-on-surface-variant text-xs whitespace-nowrap">9:00 PM</span>
+<span data-unread class="w-2 h-2 rounded-full bg-primary mt-2"></span>
+</div>
+<div class="flex items-start gap-4 py-5 border-b border-outline-variant/10">
+<div class="w-10 h-10 rounded-full bg-secondary/15 flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-secondary text-xl">eco</span></div>
+<div class="flex-1"><p class="text-on-surface text-sm font-bold">Energy goal reached</p><p class="text-on-surface-variant text-sm">Yesterday came in 12% under your weekly target.</p></div>
+<span class="text-on-surface-variant text-xs whitespace-nowrap">6:12 PM</span>
+<span data-unread class="w-2 h-2 rounded-full bg-primary mt-2"></span>
+</div>
+<p class="text-on-surface-variant text-xs font-bold uppercase tracking-widest mt-8 mb-2">Earlier</p>
+<div class="flex items-start gap-4 py-5 border-b border-outline-variant/10">
+<div class="w-10 h-10 rounded-full bg-primary/15 flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-primary text-xl">devices</span></div>
+<div class="flex-1"><p class="text-on-surface text-sm font-bold">New device paired</p><p class="text-on-surface-variant text-sm">Porch Cam 4K joined Aether Hub and was assigned to Outdoor.</p></div>
+<span class="text-on-surface-variant text-xs whitespace-nowrap">Yesterday</span>
+<span class="w-2 mt-2"></span>
+</div>
+<div class="flex items-start gap-4 py-5 border-b border-outline-variant/10">
+<div class="w-10 h-10 rounded-full bg-primary/15 flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-primary text-xl">water_drop</span></div>
+<div class="flex-1"><p class="text-on-surface text-sm font-bold">Leak sensor self-test passed</p><p class="text-on-surface-variant text-sm">Kitchen sensor battery 86%, signal strong.</p></div>
+<span class="text-on-surface-variant text-xs whitespace-nowrap">Yesterday</span>
+<span class="w-2 mt-2"></span>
+</div>
+<div class="flex items-start gap-4 py-5 border-b border-outline-variant/10">
+<div class="w-10 h-10 rounded-full bg-primary/15 flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-primary text-xl">system_update</span></div>
+<div class="flex-1"><p class="text-on-surface text-sm font-bold">Hub firmware updated</p><p class="text-on-surface-variant text-sm">Aether Hub restarted cleanly after v2.4.0-aura.</p></div>
+<span class="text-on-surface-variant text-xs whitespace-nowrap">Tuesday</span>
+<span class="w-2 mt-2"></span>
+</div>
+</div>
+
+</main>
+<script src="app.js"></script>
+</body></html>
