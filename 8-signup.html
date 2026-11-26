@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sign Up | Aether Home</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-dim": "#0e0e10",
+                      "primary-fixed-dim": "#5191ff",
+                      "inverse-surface": "#fcf8fb",
+                      "tertiary-fixed": "#ff9817",
+                      "secondary-fixed-dim": "#60ec79",
+                      "on-primary-fixed-variant": "#002a61",
+                      "surface-tint": "#85adff",
+                      "primary-fixed": "#6c9fff",
+                      "on-error": "#490006",
+                      "on-error-container": "#ffa8a3",
+                      "on-primary-fixed": "#000000",
+                      "surface-variant": "#252528",
+                      "error": "#ff716c",
+                      "inverse-on-surface": "#555557",
+                      "on-tertiary-fixed": "#281300",
+                      "on-primary": "#002c65",
+                      "on-background": "#fefbfe",
+                      "on-secondary": "#005d21",
+                      "tertiary": "#ffa84f",
+                      "outline": "#767577",
+                      "primary": "#85adff",
+                      "surface-container-highest": "#252528",
+                      "surface-container-high": "#1f1f22",
+                      "secondary-fixed": "#6ffb85",
+                      "error-dim": "#d7383b",
+                      "surface": "#0e0e10",
+                      "on-primary-container": "#00214f",
+                      "background": "#0e0e10",
+                      "primary-container": "#6c9fff",
+                      "error-container": "#9f0519",
+                      "outline-variant": "#48474a",
+                      "inverse-primary": "#005bc2",
+                      "secondary": "#6ffb85",
+                      "on-tertiary-fixed-variant": "#573000",
+                      "on-tertiary-container": "#482600",
+                      "on-surface": "#fefbfe",
+                      "surface-bright": "#2c2c2f",
+                      "tertiary-dim": "#ea8900",
+                      "surface-container-lowest": "#000000",
+                      "on-surface-variant": "#acaaad",
+                      "tertiary-container": "#fe9400",
+                      "on-secondary-container": "#e5ffe0",
+                      "secondary-dim": "#60ec79",
+                      "on-secondary-fixed-variant": "#006826",
+                      "tertiary-fixed-dim": "#ee8b00",
+                      "primary-dim": "#0070eb",
+                      "surface-container-low": "#131315",
+                      "surface-container": "#19191c",
+                      "on-tertiary": "#562f00",
+                      "on-secondary-fixed": "#004818",
+                      "secondary-container": "#006e28"
+              },
+              "borderRadius": {
+                      "DEFAULT": "1rem",
+                      "lg": "2rem",
+                      "xl": "3rem",
+                      "full": "9999px"
+              },
+              "fontFamily": {
+                      "headline": ["Manrope"],
+                      "body": ["Inter"],
+                      "label": ["Inter"]
+              }
+            },
+          },
+        }
+      </script>
+<style>
+        .glass-card {
+            background: rgba(31, 31, 34, 0.4);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .bg-mesh {
+            background-image: radial-gradient(at 0% 0%, hsla(220, 100%, 15%, 1) 0, transparent 50%),
+                              radial-gradient(at 100% 100%, hsla(250, 100%, 10%, 1) 0, transparent 50%),
+                              radial-gradient(at 50% 50%, hsla(220, 100%, 5%, 1) 0, transparent 100%);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface overflow-hidden">
+<!-- Background Ambiance -->
+<div class="fixed inset-0 -z-10 bg-mesh opacity-60"></div>
+<div class="fixed inset-0 -z-10" data-alt="abstract deep blue and violet ethereal light patterns with soft grain texture and cinematic atmosphere" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDYro7x-kbpw1zIQ-3WSiDBOVEwp0W0FR2qyzJ9kEoYbQINygBaxPb1H2HHpO0Jo8zWl9puG5FMwkOjNYaR2HayS05XSys3YbprISF60mkP10u0ciw8ky5NKvvcz2LIvtAhqADGWK0TCkBbdkBszyBp0yrQOqo8CdhevK7BF-h0DEm7_tWwfwoDldzvfRauOr1gPyXWnc3nCASEsTn8h7-LXqUd3j-ug546kCNnWZeIvf4_a80WQaWle54-npnAgh-J_G045DliK69n'); background-size: cover; background-position: center; mix-blend-mode: overlay; opacity: 0.15;"></div>
+<!-- Header Navigation (Simplified for Signup) -->
+<header class="fixed top-0 w-full flex justify-between items-center px-8 py-6 z-50">
+<div class="text-2xl font-bold tracking-tighter text-[#fefbfe] font-headline">Aether Home</div>
+<div class="flex items-center gap-6">
+<span class="text-xs uppercase tracking-widest text-on-surface-variant font-headline">The Digital Curator</span>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="relative min-h-screen flex items-center justify-center p-6">
+<!-- Decoration Elements -->
+<div class="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-[120px]"></div>
+<div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-secondary/5 rounded-full blur-[120px]"></div>
+<section class="w-full max-w-xl">
+<!-- Editorial Pairing -->
+<div class="mb-12 text-center">
+<h1 class="font-headline text-5xl md:text-6xl font-extrabold tracking-tight mb-4">Create your space.</h1>
+<p class="text-on-surface-variant text-sm font-label uppercase tracking-[0.2em]">Begin your curation journey</p>
+</div>
+<!-- Glassmorphism Container -->
+<div class="glass-card p-10 rounded-xl shadow-2xl relative">
+<form class="space-y-6">
+<!-- Full Name -->
+<div class="space-y-2">
+<label class="block text-[10px] font-semibold text-on-surface-variant uppercase tracking-widest pl-1">Full Name</label>
+<div class="relative group">
+<input class="w-full bg-surface-container-high border-none rounded-lg px-5 py-4 text-on-surface placeholder-outline focus:ring-0 focus:bg-surface-bright transition-all duration-300" placeholder="Julianne Moore" type="text"/>
+</div>
+</div>
+<!-- Email -->
+<div class="space-y-2">
+<label class="block text-[10px] font-semibold text-on-surface-variant uppercase tracking-widest pl-1">Email Address</label>
+<div class="relative group">
+<input class="w-full bg-surface-container-high border-none rounded-lg px-5 py-4 text-on-surface placeholder-outline focus:ring-0 focus:bg-surface-bright transition-all duration-300" placeholder="curator@aether.home" type="email"/>
+</div>
+</div>
+<!-- Password Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="space-y-2">
+<label class="block text-[10px] font-semibold text-on-surface-variant uppercase tracking-widest pl-1">Password</label>
+<input class="w-full bg-surface-container-high border-none rounded-lg px-5 py-4 text-on-surface placeholder-outline focus:ring-0 focus:bg-surface-bright transition-all duration-300" placeholder="••••••••" type="password"/>
+</div>
+<div class="space-y-2">
+<label class="block text-[10px] font-semibold text-on-surface-variant uppercase tracking-widest pl-1">Confirm</label>
+<input class="w-full bg-surface-container-high border-none rounded-lg px-5 py-4 text-on-surface placeholder-outline focus:ring-0 focus:bg-surface-bright transition-all duration-300" placeholder="••••••••" type="password"/>
+</div>
+</div>
+<!-- Action -->
+<div class="pt-4">
+<button type="button" class="w-full py-5 rounded-lg bg-gradient-to-br from-primary to-primary-container text-on-primary-fixed font-headline font-bold text-lg tracking-tight hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 shadow-lg shadow-primary/10">
+                            Sign Up
+                        </button>
+</div>
+<div class="pt-4 text-center">
+<p class="text-on-surface-variant text-sm">
+                            Already have an account? 
+                            <a class="text-primary hover:text-primary-fixed font-semibold ml-1 transition-colors" href="login.html">Sign In</a>
+</p>
+</div>
+</form>
+</div>
+<!-- Trust Badge -->
+<div class="mt-8 flex justify-center items-center gap-4 opacity-40">
+<span class="material-symbols-outlined text-sm">encrypted</span>
+<span class="text-[10px] font-label uppercase tracking-widest">End-to-End Encrypted Ecosystem</span>
+</div>
+</section>
+</main>
+<!-- Footer Decoration -->
+<footer class="fixed bottom-0 w-full flex justify-between items-center px-12 py-8 z-50">
+<div class="text-[10px] font-headline uppercase tracking-widest text-[#48474a]">© 2024 Aether Home Digital Curator</div>
+<div class="flex gap-8">
+<a class="text-[10px] font-headline uppercase tracking-widest text-[#48474a] hover:text-[#85adff] transition-colors" href="#">Privacy</a>
+<a class="text-[10px] font-headline uppercase tracking-widest text-[#48474a] hover:text-[#85adff] transition-colors" href="#">Terms</a>
+</div>
+</footer>
+<script src="app.js"></script>
+</body></html>
